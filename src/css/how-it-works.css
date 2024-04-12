@@ -120,14 +120,18 @@ font-weight: 600;
 .steps-list li {
 margin-bottom: 20px;
     position: relative;
-    border-radius: 15px;
-    padding: 12px 27px 12px 24px;
-    width: 100%;
-    max-width: 335px;
+    display: flex;
+       align-items: center;
+        gap: 24px;
+        padding: 12px 27px 12px 24px;
+       border-radius: 15px;
+    background-color: #fbfbfb;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.6);
     height: 76px;
-    counter-increment: count 1;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -143,8 +147,7 @@ margin-bottom: 20px;
 
 
     .works-image {
-       width: 640px;
-        height: 640px;
+        max-width: none;
     }
 
 
@@ -214,9 +217,7 @@ margin-bottom: 20px;
     }
 
     .works-image {
-        
-        width: 430px;
-        height: 559px;
+        max-width: none;
     }
 
     .works-list {

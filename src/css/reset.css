@@ -41,6 +41,9 @@ input {
   font-family: Inter Tight, sans-serif;
   font-weight: 600;
 }
+.main {
+  position: relative;
+}
 .container {
   min-width: 320px;
   max-width: 375px;

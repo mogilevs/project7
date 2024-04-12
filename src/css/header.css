@@ -1,2 +1,153 @@
 .header {
+    background-color: #576F35;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+}
+
+.logo {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  
+}
+
+.icon-logo {
+    fill: #fbfbfb;
+}
+
+.logo-text {
+    fill: #fbfbfb;
+}
+
+.nav-list {
+   
+    /* display: flex;
+    gap: 8px;
+    margin-right: 20px;
+    align-items: center; */
+    display: none;
+}
+
+.menu-item {}
+
+.menu-link {
+    border: 1px solid rgba(251, 251, 251, 0.4);
+        border-radius: 12px;
+        padding: 12px;
+        width: 114px;
+        height: 44px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #fbfbfb;
+}
+
+.header-btn {
+    /* border-radius: 30px;
+        padding: 16px 32px;
+        min-width: 157px;
+        height: 52px;
+        background-color: #7a3145;
+        font-weight: 600;
+        border: none;
+            font-size: 18px;
+            line-height: 1.11111;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #fbfbfb;
+            display: block;
+            margin: 0 auto;
+            margin-left: auto; */
+            display: none;
+}
+
+.header-btn:hover,
+.header-btn:focus{
+  background-color: #622133;
+}
+
+.open-menu-btn {
+    line-height: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    
+    
+}
+
+.btn-icon-open {
+    fill:none;
+    stroke-width: 3px;
+    stroke: #fbfbfb;
+}
+/* ============================== */
+
+@media screen and (min-width: 768px) {
+    /* .container {
+        max-width: 768px;
+    } */
+.logo{
+    gap: 8px;;
+}
+.icon-logo{
+    width: 18px;
+    height: 18px;
+}
+.logo-text{
+    width:168px; 
+    height:15px;
+}
+.btn-icon-open{
+    width: 40px;
+    height: 40px;
+}
+}
+
+/* ============================== */
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+.logo{
+
+}
+.nav-list{
+    display: flex;
+    gap: 8px;
+     margin-right: 20px;
+    align-items: center;
+}
+
+.header-btn{
+border-radius: 30px;
+    padding: 16px 32px;
+    min-width: 157px;
+    height: 52px;
+    background-color: #7a3145;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+}
+.open-menu-btn{
+    display: none;
+}
 }

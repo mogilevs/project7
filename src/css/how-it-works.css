@@ -1,3 +1,7 @@
+
+.container{
+    padding: 0;
+}
 .section-works {
     display: inline-block;
     padding: 40px 20px;
@@ -21,7 +25,7 @@
     width: 375px;
     height: 654px;
     background-color: #576f35;
-
+margin: 12px;
 }
 
 
@@ -50,10 +54,10 @@
     position: absolute;
 
 
-    border-radius: 100%;
-    fill: #7a3145;
-    stroke-width: 5px;
-    stroke: rgba(122, 49, 69, 0.3);
+    border-radius: 50%;
+    
+    border: 5px solid rgba(122, 49, 69, 0.3);
+    
     display: flex;
     justify-content: center;
     align-items: center;

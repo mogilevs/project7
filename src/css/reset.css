@@ -36,6 +36,10 @@ input {
   font-family: inherit;
 }
 
+body {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 600;
+}
 .container {
   min-width: 320px;
   max-width: 375px;

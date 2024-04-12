@@ -5,10 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -28,47 +30,26 @@
 }
 
 .nav-list {
-   
-    /* display: flex;
-    gap: 8px;
-    margin-right: 20px;
-    align-items: center; */
+    
     display: none;
 }
 
-.menu-item {}
-
 .menu-link {
     border: 1px solid rgba(251, 251, 251, 0.4);
-        border-radius: 12px;
-        padding: 12px;
-        width: 114px;
-        height: 44px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: -0.02em;
-            text-align: center;
-            color: #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+    width: 114px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
 }
 
 .header-btn {
-    /* border-radius: 30px;
-        padding: 16px 32px;
-        min-width: 157px;
-        height: 52px;
-        background-color: #7a3145;
-        font-weight: 600;
-        border: none;
-            font-size: 18px;
-            line-height: 1.11111;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            color: #fbfbfb;
-            display: block;
-            margin: 0 auto;
-            margin-left: auto; */
-            display: none;
+   display: none;
 }
 
 .header-btn:hover,
@@ -81,9 +62,7 @@
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    border: none;
-    
-    
+    border: none;  
 }
 
 .btn-icon-open {
@@ -94,9 +73,12 @@
 /* ============================== */
 
 @media screen and (min-width: 768px) {
-    /* .container {
+    .container {
         max-width: 768px;
-    } */
+    }
+.header-container{
+    padding-top: 32px;
+}
 .logo{
     gap: 8px;;
 }
@@ -120,8 +102,9 @@
     .container {
         max-width: 1158px;
     }
-.logo{
 
+.logo{
+    margin-right: 397px;
 }
 .nav-list{
     display: flex;
@@ -131,21 +114,20 @@
 }
 
 .header-btn{
-border-radius: 30px;
-    padding: 16px 32px;
-    min-width: 157px;
+    border-radius: 30px;
+    width: 157px;
     height: 52px;
     background-color: #7a3145;
     font-weight: 600;
     border: none;
     font-size: 18px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
     display: block;
     margin: 0 auto;
-    margin-left: auto;
+    
 }
 .open-menu-btn{
     display: none;

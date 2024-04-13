@@ -44,7 +44,7 @@
   }
   
   .footer-container1-text {
-    font-family: "Inter+Tight", sans-serif;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -95,7 +95,6 @@
   }
   
   .footer-container4-link {
-    font-family: "Inter+Tight", sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
@@ -104,7 +103,6 @@
   }
   
   .footer-container4-text {
-    font-family: "Inter+Tight", sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
@@ -125,9 +123,9 @@
     .footer-section1 {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-direction: row;
-      gap: 0;
+      gap: 224px;
     }
   
     .footer-link {
@@ -189,12 +187,18 @@
       width: 18px;
       height: 18px;
     }
+    .footer-address{
+      gap: 25px;
+    }
   }
   
   @media screen and (min-width: 1280px) {
     .footer {
       padding-top: 50px;
       padding-bottom: 50px;
+    }
+    .footer-section1{
+      gap: 302px;
     }
   
     .footer-section2 {

@@ -37,13 +37,15 @@ padding: 80px 20px;
 
 
 .steps-list {
-    list-style: none;
+    counter-reset: list;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
-        counter-reset: count;
+        gap: 20px;
+        width: 100%;
 
 }
-.steps-list li {
+/* .steps-list li {
     margin-bottom: 20px;
     position: relative;
     display: flex;
@@ -59,25 +61,25 @@ padding: 80px 20px;
     color: rgba(20, 20, 20, 0.6);
     height: 76px;
 
-}
+} */
 
-.steps-list li::before {
-position: absolute;
-    border-radius: 50%;
-    border: 5px solid rgba(122, 49, 69, 0.3);
+.steps-item:before {
+    counter-increment: list;
+    content: counter(list) "";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #FBFBFB;
+    border-radius: 100%;
+    background: #7A3145;
+    border: 5px solid rgba(122, 115, 49, 0.3);
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 42px;
-    height: 42px;
-    background-color: #7a3145;
-    color: #fbfbfb;
-    content: counter(count);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.0;
-    letter-spacing: -0.02em;
-    counter-increment: count;
+    flex-shrink: 0;
 }
 
 
@@ -113,11 +115,19 @@ font-weight: 600;
 
 
 .steps-item {
-    border-radius: 15px;
-    padding: 12px 27px 12px 24px;
-    background-color: #fbfbfb;
-
-
+border-radius: 15px;
+    padding: 12px 25px 12px 24px;
+    background: #FBFBFB;
+    width: 100%;
+    height: 76px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.6);
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 
@@ -142,6 +152,9 @@ font-weight: 600;
 
     .works-image {
         max-width: none;
+        width: 100%;
+        max-width: 640px;
+            height: 640px;
     }
 
 
@@ -207,10 +220,11 @@ font-weight: 600;
         height: 759px;
 
     }
-
-    .works-image {
-        max-width: none;
-    }
+.works-image {
+    max-width: none;
+    width: 100%;
+    max-width: 430px;
+        height: 559px;}
 
     .works-list {
         width: 650px;
@@ -240,12 +254,12 @@ font-weight: 600;
 
 
     } */
-.steps-list li{
+/* .steps-list li{
     
         padding: 12px 25px 12px 24px;
         width: 450px;
         
-}
+} */
 
     .steps-item {
       

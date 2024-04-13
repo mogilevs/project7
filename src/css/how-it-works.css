@@ -40,7 +40,7 @@ padding: 80px 20px;
     list-style: none;
         display: flex;
         flex-direction: column;
-        counter-reset: count 0;
+        counter-reset: count;
 
 }
 .steps-list li {
@@ -58,7 +58,7 @@ padding: 80px 20px;
     letter-spacing: -0.02em;
     color: rgba(20, 20, 20, 0.6);
     height: 76px;
-counter-increment: count 1;
+
 }
 
 .steps-list li::before {
@@ -72,11 +72,12 @@ position: absolute;
     height: 42px;
     background-color: #7a3145;
     color: #fbfbfb;
-    content: counter(custom-counter, decimal);
+    content: counter(count);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.0;
     letter-spacing: -0.02em;
+    counter-increment: count;
 }
 
 
@@ -173,7 +174,7 @@ font-weight: 600;
 
 
 
-    .steps-list li::before {
+    /* .steps-list li::before {
     stroke-width: 5px;
         stroke: rgba(122, 49, 69, 0.3);
 
@@ -183,7 +184,7 @@ font-weight: 600;
         stroke-width: 5px;
             stroke: rgba(122, 49, 69, 0.3);
                 max-width: 450px;
-         }
+         } */
 
 
     .steps-item-title {
@@ -231,14 +232,14 @@ font-weight: 600;
     }
 
        
-
+/* 
     .steps-list li::before {
         
         stroke-width: 5px;
         stroke: rgba(122, 49, 69, 0.3);
 
 
-    }
+    } */
 .steps-list li{
     
         padding: 12px 25px 12px 24px;

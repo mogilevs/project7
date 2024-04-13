@@ -19,6 +19,7 @@ border-radius: 30px;
     height: 450px;
     margin-left: auto;
     margin-right: auto;
+    background-image: rgba(20, 20, 20, 0.3);;
    
 }
 
@@ -73,6 +74,7 @@ font-size: 14px;
     line-height: 1.29;
     margin-bottom: 40px;
     color: #fbfbfb;
+    font-weight: 500;
 }
 
 
@@ -102,7 +104,7 @@ border-radius: 15px;
     width: 100%;
     min-height: 76px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: rgba(20, 20, 20, 0.6);
@@ -184,7 +186,7 @@ border-radius: 15px;
     }
 
     .section-works {
-
+      padding: 100px;
         width: 630px;
         height: 759px;
 

@@ -9,7 +9,8 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -36,6 +37,13 @@ input {
   font-family: inherit;
 }
 
+.body {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+}
+.main {
+  position: relative;
+}
 .container {
   min-width: 320px;
   max-width: 375px;

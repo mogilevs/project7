@@ -1,15 +1,18 @@
 
 .container{
-    padding: 0;
+    
+    
 }
 .section-works {
     
-    padding: 40px 20px;
-        width: 100%;
-        max-width: 375px;
-        background-color: #7a3145;
-        margin: 0 auto;
+padding: 40px 20px;
+    width: 100%;
+    max-width: 375px;
+    background-color: #7a3145;
+    margin: 0 auto;
 }
+
+
 .picture{
     border-radius: 30px;
     background-color: rgba(20, 20, 20, 0.3);
@@ -32,7 +35,7 @@ border-radius: 30px;
 .works-list {
 padding: 80px 20px;
     width: 100%;
-    max-width: 375px;
+     max-width: 375px; 
     background-color: #576f35;
     margin: 0 auto;
 }
@@ -154,19 +157,23 @@ border-radius: 15px;
 
     .works-title {
       font-size: 32px;
+      width: 450px;
     }
 
 
     .works-p {
         
         font-size: 16px;
-        
+        width: 450px;
 
 
     }
 
 
-
+        .steps-item {
+            font-size: 16px;
+            width: 450px;
+        }
 
    
 
@@ -228,4 +235,4 @@ border-radius: 15px;
         width: 450px;
         
     }
-}
+} 

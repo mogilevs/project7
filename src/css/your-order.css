@@ -55,34 +55,43 @@
 .form-input {
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-radius: 30px;
-  padding: 16px 346px 16px 16px;
+  padding: 16px;
   width: 429px;
   height: 52px;
   margin-bottom: 15px;
   outline: transparent;
-}
-.form-input-email {
-  padding: 16px 376px 16px 16px;
-}
-.contact-form-message {
-  border: 1px solid rgba(20, 20, 20, 0.2);
-  border-radius: 15px;
-  padding: 16px 345px 59px 16px;
-  width: 429px;
-  height: 95px;
-  margin-bottom: 25px;
-  outline: transparent;
-  overflow: hidden;
   resize: none;
-}
-.contact-form-message::placeholder {
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  text-align: center;
+}
+.form-input::placeholder {
   color: #141414;
 }
+/* стилізація інпута в стані фокус */
+.form-input:focus {
+  border-color: #7a3145;
+}
+
+/* стилізація інпута при не валідному значенні */
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+/* стилізація інпута при валідному значенні */
+.form-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+
+.form-input-comment {
+  border-radius: 15px;
+  width: 429px;
+  height: 95px;
+  margin-bottom: 25px;
+}
+
 .contact-form-submit-btn {
   border-radius: 30px;
   padding: 16px 191px;

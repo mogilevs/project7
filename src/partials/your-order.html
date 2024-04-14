@@ -1,3 +1,4 @@
+git status
 <section class="your-order-section">
   <div class="container your-order-container">
     <div class="title-paragraph">
@@ -25,20 +26,22 @@
             name="user-name"
             placeholder="Full Name"
             id="user-name"
-            pattern="[a-zA-Zа-яА-ЯіІїЇєЄҐґ’]+"
-            title="Svitlana"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="Vitalii Medvid"
             required
           />
           <input
             type="email"
-            class="form-input form-input-email"
+            class="form-input"
             name="user-email"
             placeholder="Email"
             id="user-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="krisvital12@gmail.com"
             required
           />
           <textarea
-            class="contact-form-message"
+            class="form-input form-input-comment"
             id="user-comment"
             name="user-comment"
             placeholder="Comment"

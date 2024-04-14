@@ -1,7 +1,8 @@
 .header {
     background-color: #576F35;  
-    /* position: absolute; */
-    
+    position: fixed;
+    top: 20px;
+    width: 100%;
 }
 
 .header-container{
@@ -22,6 +23,7 @@
     display: flex;
     gap: 4px;
     align-items: center;
+    padding: 0 8px;
      
 }
 
@@ -38,18 +40,6 @@
     
 }
 
-.menu-link {
-    border: 1px solid rgba(251, 251, 251, 0.4);
-    border-radius: 12px;
-    padding: 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #fbfbfb;
-}
-
 .header-btn {
     display: none;
 }
@@ -58,6 +48,7 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
+    padding: 0;
    
 }
 
@@ -65,13 +56,19 @@
     fill: none;
     stroke-width: 3px;
     stroke: #fbfbfb;
+    width: 32px;
 }
 /* ============================== */
 
  @media screen and (min-width: 768px){
 
+.header{
+    top: 23px;
+}
+
 .logo {
     gap: 8px;
+    padding: 0 11px;
     }
 
     .icon-logo {
@@ -84,22 +81,30 @@
         height: 15px;
     }
 
-    .btn-icon-open {
+    .open-menu-btn {
         width: 40px;
         height: 40px;
     }
- }
+
+    .btn-icon-open{
+width: 40px;
+    } 
+   }
 
  /* ============================== */
 
  @media screen and (min-width: 1280px) {
+    .header{
+        background-color: transparent;
+    }
     .header-container {
             min-width: 1080px;
         }
-        .logo{
-            margin-right: 370px;
-            margin-left: 0 auto;
-        }
+    .logo{
+     margin-right: 370px;
+    margin-left: 0 auto;
+    padding: 0 17px;
+    }
 
     .nav-list{
    display: flex;
@@ -107,10 +112,7 @@
    align-items: center;
    
     }
-.nav-list{
-    min-width: 312px;
-    height: 44px;
-}
+
 
 .menu-link {
     border: 1px solid rgba(251, 251, 251, 0.4);
@@ -127,8 +129,6 @@
     
 .header-btn {
         border-radius: 30px;
-        width: 157px;
-        height: 52px;
         background-color: #7a3145;
         font-weight: 600;
         border: none;
@@ -139,6 +139,7 @@
         color: #fbfbfb;
         display: block;
         margin-right: 0;
+        padding: 16px 32px;
 }
 
 .header-btn:hover,

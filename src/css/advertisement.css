@@ -1,0 +1,94 @@
+/* Advertisement */
+.advertisement{
+padding-top: 80px;
+padding-bottom: 80px;
+background: #fbfbfb;
+}
+
+.advertisement-container{
+padding-left: 10px;
+padding-right: 10px;
+display: flex;
+align-items:flex-start;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.discount-box{    
+border-radius: 12px;
+width: 355px;
+height: 102px;
+background-color: #576f35;
+position: absolute;
+    
+}
+
+.advertisement-text{
+font-size: 48px;
+line-height: 1.04;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+position: relative;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 10px;      
+}
+
+.advertisement-discount{ 
+color: #141414;
+  
+}
+
+/* Advertisement-min-width: 768px */
+
+@media screen and (min-width: 768px){
+
+.advertisement {
+padding-top: 100px;
+padding-bottom: 100px;}
+
+.advertisement-container {
+padding-left: 16px;
+padding-right: 16px;}
+
+.discount-box{
+    
+width: 736px;
+height: 86px;
+}  
+
+.advertisement-text{
+font-size: 64px;
+line-height: 1.09;
+padding-top: 8px;
+padding-right: 16px;
+padding-left: 16px
+}
+
+}
+
+/* Advertisement-min-width: 1280px */
+
+@media screen and (min-width: 1280px){
+
+.advertisement-container {
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.discount-box{
+width: 808px;
+}
+
+.advertisement-text{
+font-size: 76px;
+line-height: 1.05;
+padding-top: 0;
+padding-right: 13px;
+padding-left: 13px;
+}
+
+}
+
+

@@ -27,11 +27,12 @@
     margin-bottom: 40px;
 }
 
-.reviews-block {
+.list-cards {
     border: 1px solid rgba(122, 49, 69, 0.3);
     border-radius: 24px;
     padding: 20px 16px;
     height: 238px;
+  
 }
 
 .buyers-photos {
@@ -73,15 +74,11 @@
  .section-reviews {
     padding-top: 100px;
     padding-bottom: 100px;
-    }
-
- .reviews-block {
-    height: 258px;
- }
+}
 
  .list-viktoria {
      display: block;
-     }
+ }
 
 .ul-reviews {
     display: flex;
@@ -110,6 +107,7 @@
 
 .list-cards {
     width: calc((100% - 18px) / 1)
+    height: 258px;
 }
 
 .text-reviews {

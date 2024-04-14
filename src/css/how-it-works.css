@@ -1,7 +1,10 @@
 .backgraund{
-background-image: linear-gradient(to bottom, #7a3145 50%, #576f35 50%)
+background-color: #7a3145;
 }
-
+.backgraund-2{
+background-color: #576f35;
+width: 100%;
+}
 .section-works {
     
 padding: 40px 20px;
@@ -190,14 +193,12 @@ border-radius: 15px;
 
 
 @media screen and (min-width: 1280px) {
-   .backgraund{ 
-    background-image:
-            linear-gradient(to right, #7a3145 50%, #576f35 50%);
-            
-        
-        background-size: 50% 100%;
-      
-   }
+  .how-it-works-section{
+    display: flex;
+
+
+  }
+
     .container {
         display: flex;
     }

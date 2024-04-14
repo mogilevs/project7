@@ -1,0 +1,116 @@
+.header-reviews {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+}
+
+.customers {
+    color: #576f35;
+}
+
+.words-customers {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #141414;
+    margin-bottom: 40px;
+}
+
+.reviews-block {
+    border: 1px solid rgba(122, 49, 69, 0.3);
+    border-radius: 24px;
+    padding: 20px 16px;
+    height: 238px;
+    margin-bottom: 80px;
+}
+
+.buyers-photos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.name-buyers {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #040306;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text-reviews {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    color: rgba(4, 3, 6, 0.4);
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.list-viktoria {
+    display: none;
+}
+
+.list-ihor {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+ .list-viktoria {
+     display: block;
+     max-width: 50%;
+     }
+
+.ul-reviews {
+    display: flex;
+}
+
+.header-reviews {
+    max-width: 58%;
+}
+
+.words-customers {
+    max-width: 70%;
+}
+
+.reviews-block {
+ margin-bottom: 100px;
+}
+.list-john {
+ max-width: 50%;
+ margin-right: 18px;
+}
+
+.list-cards {
+    width: calc((100% - 25px) / 2)
+}
+}
+
+@media screen and (min-width: 1280px) {
+.words-customers {
+    max-width: 47%;
+}
+
+.list-ihor {
+    display: block;
+}
+.list-cards {
+    width: calc((100% - 25px) / 3);
+}
+.list-viktoria {
+    margin-right: 25px;
+}
+.list-john {
+    margin-right: 25px;
+}
+}

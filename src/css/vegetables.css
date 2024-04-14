@@ -1,0 +1,22 @@
+.vegetables{
+    padding-bottom: 80px;
+    padding-top: 80px; 
+}
+
+.vegetables-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04167;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+
+.vegetables-title-span{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04167;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}

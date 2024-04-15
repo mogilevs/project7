@@ -20,7 +20,7 @@
     <title>Green Harvest</title>
     
     <script type="module" crossorigin src="/project7s/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project7s/assets/index-31fe7087.css">
+    <link rel="stylesheet" href="/project7s/assets/index-e4725e53.css">
   </head>
   <body class="body">
     <main class="main">
@@ -49,7 +49,7 @@
     </nav>
     <button class="header-btn" type="button">Shop now</button>
 
-    <button type="button" class="open-menu-btn">
+    <button type="button" class="open-menu-btn js-open-menu">
       <svg class="btn-icon-open" width="32" height="32">
         <use href="/project7s/assets/icons-fe1eca30.svg#icon-mobile-header-btn-open"></use>
       </svg>
@@ -57,8 +57,43 @@
   </div>
 </header>
 
-      
+      <body>
+  <div class="backdrop js-menu-container is-open">
+    <div class="mob-menu">
+      <div class="mob-menu-top">
+        <button type="button" class="close-menu-btn js-close-menu">
+          <svg class="modal-icon" width="20" height="20">
+            <use href="/project7s/assets/icons-fe1eca30.svg#icon-menu-mobile-btn-close"></use>
+          </svg>
+        </button>
 
+        <nav class="mob-menu-nav">
+          <ul class="mob-nav-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link menu-link-how" href="#how-it-works"
+                >How It Works</a
+              >
+            </li>
+            <li class="mob-menu-item menu-item">
+              <a class="mob-menu-link" href="#vegetables">Vegetables</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="mob-menu-btn" type="button">Shop now</button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </div>
+</body>
 
       
       <section id="how-it-works" class="how-it-works-section">
@@ -411,6 +446,7 @@
     </div>
   </footer>
   
+      ENOENT: no such file or directory, open '/home/runner/work/project7/project7/src/partials/mobile-menu.js'
     </main>
 
     

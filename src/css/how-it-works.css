@@ -5,6 +5,9 @@
   background-color: #576f35;
   width: 100%;
 }
+
+
+
 .section-works {
   padding: 40px 20px;
   width: 100%;
@@ -153,8 +156,10 @@
     display: flex;
   }
 
-  .container {
+  .works-container {
     padding-right: 0;
+    display: flex;
+    padding-left: 0;
   }
 
   .section-works {

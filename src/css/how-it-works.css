@@ -134,10 +134,10 @@ border-radius: 15px;
   
 
     .section-works {
-       
-        padding: 100px 64px;
+    padding: 100px 32px;
+        
+        width: 100%;
         max-width: 768px;
-
     }
 
 
@@ -201,6 +201,7 @@ border-radius: 15px;
 
     .container {
         display: flex;
+        padding-right: 0;
     }
 
     .section-works {
@@ -219,7 +220,7 @@ border-radius: 15px;
         width: 650px;
         height: 759px;
         padding: 100px;
-
+margin-left: 0;
     }
 
     .works-title {

@@ -5,7 +5,23 @@
     background-color:rgba(20, 20, 20, 0.4);;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    /* transform: translateX(100%); */
 }
+
+/* .backdrop .is-open {
+    transform: translateX(0);
+} */
+
+.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .mob-menu  {
     position: fixed;
     top: 0;
@@ -20,9 +36,6 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 999;
-    /* opacity: 0;
-    pointer-events: none;
-    visibility: hidden; */
 
 }
 
@@ -138,12 +151,12 @@ background-color: #fbfbfb;
     margin-right: 0;
     right: 0; 
 
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     
 }
-.mob-menu .is-open {
+/* .mob-menu .is-open {
     transform: translateX(0);
-}
+} */
 
 .mob-menu-btn{
     width: 157px;

@@ -32,6 +32,7 @@
     border-radius: 24px;
     padding: 20px 16px;
     height: 238px; 
+    background: #FBFBFB;
 }
 
 .buyers-photos {
@@ -107,7 +108,7 @@
 .list-cards {
     width: calc((100% - 18px) / 2);
     height: 258px;
-    padding: 20px 25px;
+    padding: 20px 20px;
 }
 
 .text-reviews {

@@ -19,30 +19,95 @@
           contact you !
         </p>
         <form class="contact-form">
-          <input type="text" class="form-input" name="user-name" placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Vitalii Medvid" required />
-          <input type="email" class="form-input" name="user-email" placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="krisvital12@gmail.com" required />
-          <textarea class="form-input form-input-comment" name="user-comment" placeholder="Comment"></textarea>
+          <input
+            type="text"
+            class="form-input"
+            name="user-name"
+            placeholder="Full Name"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="Vitalii Medvid"
+            required
+          />
+          <input
+            type="email"
+            class="form-input"
+            name="user-email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="krisvital12@gmail.com"
+            required
+          />
+          <textarea
+            class="form-input form-input-comment"
+            name="user-comment"
+            placeholder="Comment"
+          ></textarea>
           <button class="contact-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
       <div class="right-block">
-        <img class="image-right-block"
+        <div class="">
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./img/your-order/your-order-desk-1x-min.jpg 1x,
+                ./img/your-order/your-order-desk-2x-min.jpg 2x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./img/your-order/your-order-tab-1x-min.jpg 1x,
+                ./img/your-order/your-order-tab-2x-min.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./img/your-order/your-order-mob-1x-min.jpg 1x,
+                ./img/your-order/your-order-mob-2x-min.jpg 2x
+              "
+            />
+            <img
+              src="./img/your-order/your-order-desk-1x-min.jpg"
+              alt="Girl with bottle"
+              class="your-order-picture"
+            />
+          </picture>
+        </div>
+
+        <!-- <img class="image-right-block"
           srcset="../img/your-order/your-order-mob-2x-min.jpg, ./img/your-order/your-order-mob-1x-min.jpg 1x"
-          src="../img/your-order/your-order-mob-1x-min" alt="Girl with bottle" width="295" height="273" />
+          src="../img/your-order/your-order-mob-1x-min" alt="Girl with bottle" width="295" height="273" /> -->
+
         <p class="paragraph-links">Follow us on our social networks:</p>
         <ul class="social-links-list">
           <li class="li-social-link">
-            <a class="social-link" target="_blank" href="https://www.instagram.com/goitclub/">instagram</a>
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://www.instagram.com/goitclub/"
+              >instagram</a
+            >
           </li>
           <li class="social-link">/</li>
           <li class="li-social-link">
-            <a class="social-link" target="_blank" href="https://www.facebook.com/goITclub/">facebook</a>
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://www.facebook.com/goITclub/"
+              >facebook</a
+            >
           </li>
           <li class="social-link">/</li>
           <li class="li-social-link">
-            <a class="social-link" target="_blank" href="https://www.youtube.com/c/GoIT">youtube</a>
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://www.youtube.com/c/GoIT"
+              >youtube</a
+            >
           </li>
         </ul>
       </div>

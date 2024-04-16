@@ -1,5 +1,6 @@
 /* Mobile styles hero */
 .hero-img {
+
     padding: 0;
     background-image: linear-gradient(rgba(20, 20, 20, 0.2),
     rgba(20, 20, 20, 0.2)), 
@@ -12,53 +13,57 @@
     background-size: cover;
 }   
 
+
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
-.hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)),
-    url("../img/photo-hero/hero-mobile.2x.jpg");
-}
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/photo-hero/hero-mobile.2x.jpg');
+  }
 }
 
 .hero {
-    background: #576f35;
-    display: flex;
-    flex-direction: column;
+
+  background: #576f35;
+
 }
-        
+
 .hero-container {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-        
+
 .hero-container-text {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
-        
+
 .hero-title {
-    margin-bottom: 20px;
-    font-size: 48px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb; 
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
 }
-        
+
 .hero-paragraph {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    color: #fbfbfb;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
 }
-    
+
 /* Tablet styles hero */
 @media screen and (min-width: 768px) {
+
 .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2),
     rgba(20, 20, 20, 0.2)),
@@ -75,62 +80,81 @@
 }
 }
 
-.hero-container-text {
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url('../img/photo-hero/hero-tablet.2x.jpg');
+      width: 768px;
+      height: 539px;
+    }
+  }
+
+  .hero-container-text {
     padding-top: 122px;
     padding-bottom: 50px;
     padding-left: 32px;
     padding-right: 32px;
-}
+  }
 
-.hero-title {
+  .hero-title {
     font-size: 76px;
     line-height: 1;
-}
+  }
 
-.hero-paragraph {
+  .hero-paragraph {
     line-height: 1.25;
     font-size: 16px;
-}
+  }
 }
 /* Desktop styles hero */
 @media screen and (min-width: 1280px) {
-.hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)), 
-    url("../img/photo-hero/hero-desktop.1x.jpg"); 
-    display: flex;
-    height: auto;
-}
 
-@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
-.hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)), 
-    url("../img/photo-hero/hero-desktop.2x.jpg");
-}
-}
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/photo-hero/hero-desktop.1x.jpg');
+    width: 650px;
+    height: 800px;
+  }
 
-.hero {
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    .hero-img {
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url('../img/photo-hero/hero-desktop.2x.jpg 2x');
+    }
+  }
+
+
+  .hero-container {
     flex-direction: row;
-}
+  }
 
-.hero-container {
-    flex-direction: row;
-    padding-right: 0;
-}
 
-.hero-container-text {
+  .hero-container-text {
     padding-top: 238px;
     padding-bottom: 0;
     padding-left: 100px;
     padding-right: 28px;
-}
+  }
 
-.hero-title {
+  .hero-title {
     margin-bottom: 128px;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 50px;
+
 }
 
-.hero-paragraph {
-    margin-bottom: 50px;
-}
 }

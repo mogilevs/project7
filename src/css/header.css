@@ -1,6 +1,6 @@
 .header {
     background-color: #576F35;  
-    position: fixed;
+    position: absolute;
     top: 20px;
     width: 100%;
 }

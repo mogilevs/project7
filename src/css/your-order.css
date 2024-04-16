@@ -116,13 +116,9 @@
   display: flex;
   gap: 24px;
 }
-.picture-wrap {
-  background-color: #576f35;
-}
 .image-right-block {
   border-radius: 15px;
   margin-bottom: 20px;
-  background-color: #576f35;
 }
 .paragraph-links {
   font-size: 14px;

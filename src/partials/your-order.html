@@ -28,9 +28,23 @@
         </form>
       </div>
       <div class="right-block">
-        <img class="image-right-block"
-          srcset="../img/your-order/your-order-mob-2x-min.jpg, ./img/your-order/your-order-mob-1x-min.jpg 1x"
-          src="../img/your-order/your-order-mob-1x-min" alt="Girl with bottle" width="295" height="273" />
+        <div class="picture-wrap">
+          <picture class="image-right-block">
+            <source media="(min-width:1280px)" srcset="
+                          ./img/your-order/your-order-desk-1x-min.jpg 1x,
+                          ./img/your-order/your-order-desk-2x-min.jpg 2x
+                        " />
+            <source media="(min-width:768px)" srcset="
+                          ./img/your-order/your-order-tab-1x-min.jpg 1x,
+                          ./img/your-order/your-order-tab-2x-min.jpg 2x
+                        " />
+            <source media="(min-width: 320px)" srcset="
+                          ./img/your-order/your-order-mob-1x-min.jpg 1x,
+                          ./img/your-order/your-order-mob-2x-min.jpg 2x
+                        " />
+            <img src="./img/your-order/your-order-desk-1x-min.jpg" alt="Girl with bottle" class="your-order-picture" />
+          </picture>
+        </div>
         <p class="paragraph-links">Follow us on our social networks:</p>
         <ul class="social-links-list">
           <li class="li-social-link">

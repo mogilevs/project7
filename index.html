@@ -20,7 +20,7 @@
     <title>Green Harvest</title>
     
     <script type="module" crossorigin src="/project7/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project7/assets/index-ff3efd29.css">
+    <link rel="stylesheet" href="/project7/assets/index-a3cf0913.css">
   </head>
   <body class="body">
     <header class="header">
@@ -161,7 +161,7 @@
   </div>
 </section>
 
-      <section class="vegetables">
+      <section class="vegetables" id="vegetables">
     <div class="container vegetables-container">
         <h2 class="vegetables-title">ORGANIC<span class="vegetables-title-span"> VEGETABLES</span></h2>
         <p class="vegetabless-title-text">Our organic vegetables are hand-picked from local farms and delivered straight to your doorstep, ensuring that you get the freshest and most nutritious produce possible.</p>
@@ -258,7 +258,7 @@
         </ul>
     </div>
 </section>    
-      <section class="section-reviews">
+      <section class="section-reviews" id="reviews">
     <div class="container">
 <h2 class="header-reviews">reviews from our 
     <span class="customers">customers</span>
@@ -335,9 +335,14 @@
         </form>
       </div>
       <div class="right-block">
-        <img class="image-right-block"
-          srcset="../img/your-order/your-order-mob-2x-min.jpg, ./img/your-order/your-order-mob-1x-min.jpg 1x"
-          src="../img/your-order/your-order-mob-1x-min" alt="Girl with bottle" width="295" height="273" />
+        <div class="picture-wrap">
+          <picture class="image-right-block">
+            <source media="(min-width:1280px)" srcset="/project7/assets/your-order-desk-1x-min-28076cb4.jpg 1x, /project7/assets/your-order-desk-2x-min-bb16bfb4.jpg 2x" />
+            <source media="(min-width:768px)" srcset="/project7/assets/your-order-tab-1x-min-0bee4983.jpg 1x, /project7/assets/your-order-tab-2x-min-a8337c3e.jpg 2x" />
+            <source media="(min-width: 320px)" srcset="/project7/assets/your-order-mob-1x-min-5f784055.jpg 1x, /project7/assets/your-order-mob-2x-min-e0259b9c.jpg 2x" />
+            <img src="/project7/assets/your-order-desk-1x-min-28076cb4.jpg" alt="Girl with bottle" class="your-order-picture" />
+          </picture>
+        </div>
         <p class="paragraph-links">Follow us on our social networks:</p>
         <ul class="social-links-list">
           <li class="li-social-link">

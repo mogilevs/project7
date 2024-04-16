@@ -1,3 +1,7 @@
+.how-it-works-section .container{
+  padding: 0;
+}
+
 .how-it-works-section{
   background-color: #7a3145;
 }

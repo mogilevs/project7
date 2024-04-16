@@ -1,18 +1,18 @@
 /* Mobile styles hero */
 .hero-img {
-
-    padding: 0;
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)), 
-    url("../img/photo-hero/hero-mobile.1x.jpg");
-    min-width: 320px;
-    min-height: 370px;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}   
-
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url('../img/photo-hero/hero-mobile.1x.jpg');
+  min-width: 320px;
+  min-height: 370px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
   .hero-img {
@@ -25,9 +25,7 @@
 }
 
 .hero {
-
   background: #576f35;
-
 }
 
 .hero-container {
@@ -63,23 +61,28 @@
 
 /* Tablet styles hero */
 @media screen and (min-width: 768px) {
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/photo-hero/hero-tablet.1x.jpg');
+    height: 539px;
+    width: 768px;
+    flex-shrink: 0;
+  }
 
-.hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)),
-    url("../img/photo-hero/hero-tablet.1x.jpg");
-    min-height: 540px;
-}
-
-
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-.hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-    rgba(20, 20, 20, 0.2)), 
-    url("../img/photo-hero/hero-tablet.2x.jpg");
-}
-}
-
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url('../img/photo-hero/hero-tablet.2x.jpg');
+    }
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -114,7 +117,10 @@
 }
 /* Desktop styles hero */
 @media screen and (min-width: 1280px) {
-
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
   .hero-img {
     background-image: linear-gradient(
         rgba(20, 20, 20, 0.2),
@@ -135,11 +141,9 @@
     }
   }
 
-
   .hero-container {
     flex-direction: row;
   }
-
 
   .hero-container-text {
     padding-top: 238px;
@@ -154,7 +158,5 @@
 
   .hero-paragraph {
     margin-bottom: 50px;
-
-}
-
+  }
 }

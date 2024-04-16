@@ -1,103 +1,110 @@
-.vegetables{
-    padding-bottom: 80px;
-    padding-top: 80px; 
-    background-color: #7a3145;
+.vegetables {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #7a3145;
 }
 
-.vegetables-title{
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.04;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+.vegetables-title {
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 25px;
 }
 
-.vegetables-title-span{
-    opacity: 50%;
-    display: block;
+.vegetables-title-span {
+  color: rgba(251, 251, 251, 0.3);
+  display: block;
 }
 
 .vegetabless-title-text {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.3;
-color: #fbfbfb;
-padding-top: 20px;
-padding-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #fbfbfb;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .vegetables-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
 }
 
 .vegetables-item {
-    border-radius: 40px;
-padding: 32px 26px;
-width: 100%;
-max-width: 334px;
-height: 379px;
-background-color: #fbfbfb;
-display: flex;
-flex-wrap: wrap;
+  border-radius: 40px;
+  padding: 32px 26px;
+  width: 100%;
+  max-width: 334px;
+  height: 379px;
+  background-color: #fbfbfb;
+  gap: 10px;
 }
 
 .container-vegetables-list {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .vegetables-subtitle {
-font-weight: 600;
-font-size: 28px;
-line-height: 1;
-letter-spacing: -0.01em;
-color: #7a3145;
-margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #7a3145;
+  margin-bottom: 12px;
 }
 
 .vefetables-item-text {
-font-weight: 600;
-font-size: 14px;
-line-height: 1.28571;
-letter-spacing: -0.01em;
-text-transform: uppercase;
-color: #141414;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
 }
 
 @media screen and (min-width: 768px) {
-    .vegetables{
-        padding-bottom: 100px;
-        padding-top: 100px; 
-    }
-    .vegetables-title{
-        font-size: 64px;
-    }
-    .vegetabless-title-text {
-        font-size: 16px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  .vegetables {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .vegetables-title {
+    font-size: 64px;
+    line-height: 1.25;
+  }
+  .vegetabless-title-text {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
-    .vegetables-item { 
-        width: calc(50% - 20px);
-        row-gap: 28px;
-        padding: 32px 30px;
-        width: 342px;
-}
-    .vegetables-subtitle{
+  .vegetables-item {
+    width: calc(50% - 20px);
+    row-gap: 28px;
+    padding: 32px 30px;
+  }
+  .vegetables-subtitle {
     font-size: 32px;
-}
+  }
+  .vegetables-list {
+    gap: 28px 21px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-.vegetables-item{
+  .vegetables-item {
     column-gap: 21px;
-    width: calc((100% - 40px) / 3); 
+    width: calc((100% - 42px) / 3);
     padding: 32px;
-    width: 346px;
-}
+  }
+  .vegetables-title {
+    line-height: 1;
+  }
+  .vegetabless-title-text {
+    margin-top: 25px;
+  }
 }

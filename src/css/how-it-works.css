@@ -1,19 +1,11 @@
-.backgraund {
+.how-it-works-section{
   background-color: #7a3145;
 }
-.backgraund-2 {
-  background-color: #576f35;
-  width: 100%;
-}
-
 
 .section-works {
-  padding: 40px 20px;
-  width: 100%;
-  max-width: 375px;
   background-color: #7a3145;
-  margin: 0 auto;
-}
+    padding: 40px 20px;
+  }
 
 .picture {
   border-radius: 30px;
@@ -65,74 +57,7 @@
   flex-shrink: 0;
 }
 
-.how-it-works-section::before,
-.how-it-works-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: -1;
-}
 
-
-.how-it-works-section::before {
-  left: 0;
- background: #7a3145;
-
-}
-
-.how-it-works-section::after {
-  right: 0;
-  background: #576f35;
-}
-
-
- @media screen and (max-width: 1280px) {
-.how-it-works-section::before {
-    left: 0;
-    background: #7a3145;
-
-  }
-
-  .how-it-works-section::after {
-    right: 0;
-    background: #576f35;
-  }
-  .how-it-works-section::before,
-  .how-it-works-section::after {
-    display: none;
-  }
-}
-.backgraund::before,
-.backgraund::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: -1;
-}
-
-.backgraund::before{
-  background: #7a3145;
-  left: 0;
-}
-
-.backgraund-2::before,
-.backgraund-2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: -1;
-}
-
-.backgraund-2::after {
-  background: #576f35;
-  right: 0;
-}
 
 
 

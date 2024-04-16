@@ -111,14 +111,25 @@
   border-radius: 30px;
   padding: 40px 20px;
   background-color: #576f35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.your-order-picture {
+  border-radius: 15px;
+  background-color: rgba(20, 20, 20, 0.3);
 }
 .two-blocks {
   display: flex;
   gap: 24px;
 }
+.right-block-wrap {
+  margin: 0 auto;
+}
 .image-right-block {
   border-radius: 15px;
-  margin-bottom: 20px;
+
+  margin: 0 auto 20px;
 }
 .paragraph-links {
   font-size: 14px;

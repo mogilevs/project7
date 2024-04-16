@@ -1,13 +1,11 @@
-
-
-.how-it-works-section{
+.how-it-works-section {
   background-color: #7a3145;
 }
 
 .section-works {
   background-color: #7a3145;
-    padding: 40px 20px;
-  }
+  padding: 40px 20px;
+}
 
 .picture {
   border-radius: 30px;
@@ -58,10 +56,6 @@
   align-items: center;
   flex-shrink: 0;
 }
-
-
-
-
 
 .works-p {
   font-size: 14px;
@@ -128,17 +122,17 @@
 
   .works-title {
     font-size: 32px;
-    width: 450px;
+    width: 100%;
   }
 
   .works-p {
     font-size: 16px;
-    width: 450px;
+    width: 100%;
   }
 
   .steps-item {
     font-size: 16px;
-    width: 450px;
+    width: 100%;
   }
 
   .steps-item-title {

@@ -1,17 +1,13 @@
-.backgraund {
+
+
+.how-it-works-section{
   background-color: #7a3145;
 }
-.backgraund-2 {
-  background-color: #576f35;
-  width: 100%;
-}
+
 .section-works {
-  padding: 40px 20px;
-  width: 100%;
-  max-width: 375px;
   background-color: #7a3145;
-  margin: 0 auto;
-}
+    padding: 40px 20px;
+  }
 
 .picture {
   border-radius: 30px;
@@ -62,6 +58,10 @@
   align-items: center;
   flex-shrink: 0;
 }
+
+
+
+
 
 .works-p {
   font-size: 14px;
@@ -153,8 +153,10 @@
     display: flex;
   }
 
-  .container {
+  .works-container {
     padding-right: 0;
+    display: flex;
+    padding-left: 0;
   }
 
   .section-works {

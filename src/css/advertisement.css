@@ -8,15 +8,13 @@
 .advertisement-container {
   padding-left: 10px;
   padding-right: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+ 
 }
 
 .discount-box {
   border-radius: 12px;
-  width: 100%;
+  width: calc(100% - 20px);
+  max-width: 355px;
   height: 102px;
   background-color: #576f35;
   position: absolute;
@@ -32,6 +30,7 @@
   padding-top: 3px;
   padding-right: 10px;
   padding-left: 10px;
+  
 }
 
 .advertisement-discount {
@@ -49,11 +48,13 @@
   .advertisement-container {
     padding-left: 16px;
     padding-right: 16px;
+    
   }
 
   .discount-box {
-    width: 736px;
+    min-width: 736px;
     height: 86px;
+    
   }
 
   .advertisement-text {
@@ -74,7 +75,7 @@
   }
 
   .discount-box {
-    width: 808px;
+    min-width: 808px;
   }
 
   .advertisement-text {

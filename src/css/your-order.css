@@ -311,4 +311,13 @@
     letter-spacing: -0.01em;
     color: #fbfbfb;
   }
+  .li-social-link:hover {
+    transform: scale(1.03);
+  }
+  .li-social-link:hover .social-link {
+    color: #622133;
+  }
+  .contact-form-submit-btn:hover {
+    background: #72973f;
+  }
 }

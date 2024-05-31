@@ -107,4 +107,7 @@
   .vegetabless-title-text {
     margin-top: 25px;
   }
+  .vegetables-item:hover {
+    transform: scale(1.02);
+  }
 }

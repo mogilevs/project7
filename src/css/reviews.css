@@ -127,4 +127,7 @@
     gap: 25px;
     max-width: 1079px;
   }
+  .list-cards:hover {
+    transform: scale(1.05);
+  }
 }

@@ -8,13 +8,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
-    /* transform: translateX(100%); */
 }
-
-/* .backdrop .is-open {
-    transform: translateX(0);
-} */
 
 .is-open{
     opacity: 1;
@@ -71,21 +65,6 @@
 margin-bottom: 50px;
   
 }
-.mob-menu-item{
-width: 115px;
-height: 42px;
-border: 1px solid rgba(251, 251, 251, 0.4);
-border-radius: 12px;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #fbfbfb;
-
-}
-.mob-menu-item:not(:first-child){
-background-color: transparent;
-}
 
 .mob-nav-list{
  display: flex;
@@ -94,39 +73,48 @@ background-color: transparent;
 }
 
 .mob-menu-link {
-    
-    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
-    color: #fbfbfb;  
+    color: #fbfbfb; 
+    flex: 1;
+    height: 100%;
+    border-radius: 12px;
+    width: 115px;
+    height: 42px;
+    border: 1px solid rgba(251, 251, 251, 0.4);
+}  
+
+.mob-menu-link:hover{
+    color: #7a3145;
+    background: #fbfbfb;
+    opacity: 0.6;
     
 }
 
-.menu-link-how{
-    color: #7a3145;
-}
-   
 
 .mob-menu-btn{
-border-radius: 30px;
-padding: 16px 41px;
-width: 155px;
-height: 50px;
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.01em;
-text-transform: uppercase;
-color: #7a3145;
-border: none;
-display: block;
-margin: 0 auto;
-background-color: #fbfbfb;
+  border-radius: 30px;
+  padding: 16px 41px;
+  width: 155px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7a3145;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  background-color: #fbfbfb;
 }
 
 .mob-menu-btn:hover,
-.mob-menu-btn:hover{
+.mob-menu-btn:focus{
     color: rgba(122, 49, 69, 0.7);
 }
 
@@ -149,14 +137,12 @@ background-color: #fbfbfb;
     width: 351px;
     height: 100vh;
     margin-right: 0;
-    right: 0; 
-
-    /* transform: translateX(100%); */
+    right: 0;  
     
 }
-/* .mob-menu .is-open {
-    transform: translateX(0);
-} */
+.mob-menu-link{
+    font-size: 16px;
+}
 
 .mob-menu-btn{
     width: 157px;
@@ -165,7 +151,5 @@ background-color: #fbfbfb;
     line-height: 1.11;
     font-size: 16px;
 }
-
-
 }
     

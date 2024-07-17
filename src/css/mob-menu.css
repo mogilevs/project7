@@ -44,26 +44,24 @@
 }
 
 .close-menu-btn {
-    background-color: transparent;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-bottom: 188px;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-  
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 188px;
+  padding: 0;
+  width: 32px;
+  height: 32px;
 }
 
 .modal-icon {
-    fill: none;
-    stroke-width: 3px;
-    stroke: #fbfbfb;
+  fill: none;
+  stroke-width: 3px;
+  stroke: #fbfbfb;
 }
 
 .mob-nav-list {
-margin-bottom: 50px;
-  
+  margin-bottom: 50px;
 }
 
 .mob-nav-list{
@@ -120,16 +118,14 @@ margin-bottom: 50px;
 
 /* =============================== */
 
+@media screen and (min-width: 768px) {
+  .close-menu-btn {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 288px;
+  }
 
-@media screen and (min-width: 768px){
-
-.close-menu-btn{
-   width: 40px;
-   height: 40px;
-   margin-bottom: 288px;
-}
-
-.mob-menu {
+  .mob-menu {
     padding-top: 32px;
     padding-right: 32px;
     padding-bottom: 50px;

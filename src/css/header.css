@@ -96,9 +96,7 @@
     }
 
   .btn-icon-open {
-.btn-icon-open{
     width: 40px;
-  }
 }
 }
  /* ============================== */
@@ -142,7 +140,8 @@
 }
 
 
-.menu-link:hover{
+.menu-link:hover,
+.menu-link:focus{
     color: #576f35;
     background: #fbfbfb;
     transform: scale(1.03);

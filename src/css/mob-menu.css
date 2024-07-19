@@ -1,4 +1,3 @@
-
 .backdrop{
     position: fixed;
     top: 0;
@@ -8,6 +7,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    z-index: 999;
 }
 
 .is-open{
@@ -87,12 +87,12 @@
     border: 1px solid rgba(251, 251, 251, 0.4);
 }  
 
-.mob-menu-link:hover{
+/* .mob-menu-link:hover{
     color: #7a3145;
     background: #fbfbfb;
     opacity: 0.6;
-    
-}
+    transform: scale(1.03);
+} */
 
 
 .mob-menu-btn{

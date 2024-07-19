@@ -60,7 +60,7 @@
 @media screen and (min-width: 768px) {
   .header {
     top: 32px;
-    /* padding-top: 32px; */
+   
 }
 
   .logo {
@@ -109,7 +109,7 @@
         top: 32px;
         position: absolute;
         background-color: transparent;
-        /* background-color: #576f35; */
+       
  
     }
 .header-container {
@@ -145,6 +145,7 @@
 .menu-link:hover{
     color: #576f35;
     background: #fbfbfb;
+    transform: scale(1.03);
       
 }
 

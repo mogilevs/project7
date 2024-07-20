@@ -12,11 +12,19 @@ import scroll from './smoothScroll.js';
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true';
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+
+    //блокировка и разблокировка скролла
+    document.body.classList.toggle(
+      'no-scroll',
+      mobileMenu.classList.contains('is-open')
+    );
   };
 
   const closeMenu = () => {
     openMenuBtn.setAttribute('aria-expanded', false);
     mobileMenu.classList.remove('is-open');
+
+    document.body.classList.remove('no-scroll'); //разблокировка скролла
   };
 
   const scrollToOrder = event => {

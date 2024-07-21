@@ -20,7 +20,7 @@
     <title>Green Harvest</title>
     
     <script type="module" crossorigin src="/project7/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project7/assets/index-90167f7f.css">
+    <link rel="stylesheet" href="/project7/assets/index-433212f7.css">
   </head>
   <body class="body">
     <header class="header">
@@ -46,19 +46,22 @@
         </li>
       </ul>
     </nav>
-    <button class="header-btn" type="button">Shop now</button>
+    <button class="header-btn js-header-btn" type="submit">Shop now</button>
 
     <button type="button" class="open-menu-btn js-open-menu">
       <svg class="btn-icon-open" width="32" height="32">
         <use href="/project7/assets/icons-fe1eca30.svg#icon-mobile-header-btn-open"></use>
       </svg>
     </button>
+
+    <script defer src="./mobile-menu.js"></script>
   </div>
 </header>
 
     <main class="main">
-      
-  <div class="mob-menu js-menu-container">
+      <body>
+  <div class="backdrop js-menu-container">
+    <div class="mob-menu">
       <div class="mob-menu-top">
         <button type="button" class="close-menu-btn js-close-menu">
           <svg class="modal-icon" width="20" height="20">
@@ -66,22 +69,31 @@
           </svg>
         </button>
 
-    <nav class="mob-menu-nav">
-      <ul class="mob-nav-list">
-        <li class="mob-menu-item">
-          <a class="mob-menu-link menu-link-how" href="#how-it-works">How It Works</a>
-        </li>
-        <li class="mob-menu-item menu-item">
-          <a class="mob-menu-link" href="#vegetables">Vegetables</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="mob-menu-link" href="#reviews">Reviews</a>
-        </li>
-      </ul>
-    </nav>
+        <nav class="mob-menu-nav">
+          <ul class="mob-nav-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#how-it-works">How It Works</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#vegetables">Vegetables</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="mob-menu-btn" type="button">Shop now</button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <scrpt defer src="./mobile-menu.js"></scrpt>
   </div>
-  <button class="mob-menu-btn" type="button">Shop now</button>
-  </div>
+</body>
 
       <section class="hero">
     <div class="hero-container container">
@@ -303,7 +315,7 @@
 </ul>
     </div>
 </section>
-      <section class="your-order-section">
+      <section class="your-order-section" id="your-order">
   <div class="container your-order-container">
     <div class="title-paragraph">
       <h2 class="your-order-title">
@@ -324,34 +336,80 @@
           contact you !
         </p>
         <form class="contact-form">
-          <input type="text" class="form-input" name="user-name" placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Vitalii Medvid" required />
-          <input type="email" class="form-input" name="user-email" placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="krisvital12@gmail.com" required />
-          <textarea class="form-input form-input-comment" name="user-comment" placeholder="Comment"></textarea>
+          <input
+            type="text"
+            class="form-input"
+            name="user-name"
+            placeholder="Full Name"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="Vitalii Medvid"
+            required
+          />
+          <input
+            type="email"
+            class="form-input"
+            name="user-email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="krisvital12@gmail.com"
+            required
+          />
+          <textarea
+            class="form-input form-input-comment"
+            name="user-comment"
+            placeholder="Comment"
+          ></textarea>
           <button class="contact-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
       <div class="right-block">
         <div class="right-block-wrap">
           <picture class="image-right-block">
-            <source media="(min-width:1280px)" srcset="/project7/assets/your-order-desk-1x-min-28076cb4.jpg 1x, /project7/assets/your-order-desk-2x-min-bb16bfb4.jpg 2x" />
-            <source media="(min-width:768px)" srcset="/project7/assets/your-order-tab-1x-min-0bee4983.jpg 1x, /project7/assets/your-order-tab-2x-min-a8337c3e.jpg 2x" />
-            <source media="(min-width: 320px)" srcset="/project7/assets/your-order-mob-1x-min-5f784055.jpg 1x, /project7/assets/your-order-mob-2x-min-e0259b9c.jpg 2x" />
-            <img src="/project7/assets/your-order-desk-1x-min-28076cb4.jpg" alt="Girl with bottle" class="your-order-picture" />
+            <source
+              media="(min-width:1280px)"
+              srcset="/project7/assets/your-order-desk-1x-min-28076cb4.jpg 1x, /project7/assets/your-order-desk-2x-min-bb16bfb4.jpg 2x"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="/project7/assets/your-order-tab-1x-min-0bee4983.jpg 1x, /project7/assets/your-order-tab-2x-min-a8337c3e.jpg 2x"
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="/project7/assets/your-order-mob-1x-min-5f784055.jpg 1x, /project7/assets/your-order-mob-2x-min-e0259b9c.jpg 2x"
+            />
+            <img
+              src="/project7/assets/your-order-desk-1x-min-28076cb4.jpg"
+              alt="Girl with bottle"
+              class="your-order-picture"
+            />
           </picture>
           <p class="paragraph-links">Follow us on our social networks:</p>
           <ul class="social-links-list">
             <li class="li-social-link">
-              <a class="social-link" target="_blank" href="https://www.instagram.com/goitclub/">instagram</a>
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.instagram.com/goitclub/"
+                >instagram</a
+              >
             </li>
             <li class="social-link">/</li>
             <li class="li-social-link">
-              <a class="social-link" target="_blank" href="https://www.facebook.com/goITclub/">facebook</a>
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.facebook.com/goITclub/"
+                >facebook</a
+              >
             </li>
             <li class="social-link">/</li>
             <li class="li-social-link">
-              <a class="social-link" target="_blank" href="https://www.youtube.com/c/GoIT">youtube</a>
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.youtube.com/c/GoIT"
+                >youtube</a
+              >
             </li>
           </ul>
         </div>
@@ -359,6 +417,7 @@
     </div>
   </div>
 </section>
+
     </main>
     <footer class="footer">
   <div class="container footer-container">

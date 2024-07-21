@@ -1,9 +1,10 @@
 .how-it-works-section {
-  background-color: #7a3145;
+  /* background-color: #7a3145; */
+  background: linear-gradient(to bottom, #7a3145 42%, #576f35 42% 58%);
 }
 
 .section-works {
-  background-color: #7a3145;
+  /* background-color: #7a3145; */
   padding: 40px 20px;
 }
 
@@ -25,7 +26,7 @@
   padding: 80px 20px;
   width: 100%;
   max-width: 375px;
-  background-color: #576f35;
+  /* background-color: #576f35; */
   margin: 0 auto;
 }
 
@@ -101,6 +102,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .how-it-works-section{
+      background: linear-gradient(to bottom, #7a3145 53%, #576f35 53% 47%);
+
+  }
+
   .section-works {
     padding: 100px 32px;
 
@@ -143,6 +149,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+.how-it-works-section {
+    background: linear-gradient(to right, #7a3145 49%, #576f35 49% 51%);
+
+  }
+
   .how-it-works-section {
     display: flex;
   }
